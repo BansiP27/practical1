@@ -1,0 +1,50 @@
+<!-- Hi, <%= myvalue %>
+<br>
+<label> Your log in ID not found </label><br>
+<a href="/">Login</a> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.alert {
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: green;
+}
+</style>
+</head>
+<body>
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';"> &times; </span> 
+  <strong> Alert! </strong><%= myvalue %>.
+</div><br><br>
+
+<a href="/login"><button type="button" style="background-color: maroon; border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;"> Log In </button></a>
+
+</body>
+</html>
